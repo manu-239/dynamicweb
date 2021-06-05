@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>dynamicweb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>addcar</servlet-name>
+  	<servlet-class>com.carworld.servlet.car.AddCarServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>cardetails</servlet-name>
+  	<servlet-class>com.carworld.servlet.car.CarDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>delcar</servlet-name>
+  	<servlet-class>com.carworld.servlet.car.DeleteCarServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>carlists</servlet-name>
+  	<servlet-class>com.carworld.servlet.car.CarListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addcar</servlet-name>
+  	<url-pattern>/addcar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>cardetails</servlet-name>
+  	<url-pattern>/cardtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>delcar</servlet-name>
+  	<url-pattern>/delcar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>carlists</servlet-name>
+  	<url-pattern>/cars</url-pattern>
+  </servlet-mapping>
+</web-app>
